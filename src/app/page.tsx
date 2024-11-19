@@ -1,11 +1,15 @@
 import React from 'react';
-import {getMovies} from "@/app/services/api.service";
+import {apiService} from "@/app/services/api.service";
+import HomeMovie from "@/app/components/home-movie/HomeMovie";
+import MoviesList from "@/app/components/movies-list/MoviesList";
 
 const MoviesPage = async () => {
-    const movies = await getMovies();
+    const movies = await apiService.movieService.getMovies();
     return (
         <div>
             MoviesPage
+            <HomeMovie/>
+            <MoviesList movies={movies}/>
         </div>
     );
 };

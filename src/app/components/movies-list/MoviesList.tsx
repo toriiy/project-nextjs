@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {FC} from 'react';
+import {IMovie} from "@/app/modules/IMovie";
+import MoviePreview from "@/app/components/movie-preview/MoviePreview";
 
-const MoviesList = () => {
+type PropsType = {
+    movies: IMovie[]
+}
+const MoviesList: FC<PropsType> = ({movies}) => {
     return (
         <div>
-
+            {movies.map(movie => <MoviePreview movie={movie} key={movie.id}/>)}
         </div>
     );
 };

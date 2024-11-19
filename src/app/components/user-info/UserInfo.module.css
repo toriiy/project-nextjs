@@ -1,0 +1,12 @@
+.image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.userDiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
