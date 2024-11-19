@@ -1,4 +1,4 @@
-import {IMovie} from "@/app/modules/IMovie";
+import {IMovie} from "@/app/models/IMovie";
 
 export interface IResponse {
     page: number,

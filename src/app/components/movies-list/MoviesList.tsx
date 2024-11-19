@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {IMovie} from "@/app/modules/IMovie";
+import {IMovie} from "@/app/models/IMovie";
 import MoviePreview from "@/app/components/movie-preview/MoviePreview";
 
 type PropsType = {
