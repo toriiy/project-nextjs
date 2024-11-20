@@ -7,7 +7,6 @@ const MoviesPage = async () => {
     const movies = await apiService.movieService.getMovies();
     return (
         <div>
-            MoviesPage
             <HomeMovie/>
             <MoviesList movies={movies}/>
         </div>

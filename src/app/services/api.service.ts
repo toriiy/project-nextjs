@@ -1,6 +1,6 @@
-import {IHomeMovie} from "@/app/models/IHomeMovie";
-import {IMovie} from "@/app/models/IMovie";
+import {IMovieFull} from "@/app/models/IMovieFull";
 import {IForm} from "@/app/models/IForm";
+import {IMovie} from "@/app/models/IMovie";
 
 export const apiService = {
     movieService: {
@@ -10,7 +10,13 @@ export const apiService = {
             console.log(response.results);
             return response.results;
         },
-        getHomeMovie: async (): Promise<IHomeMovie> => {
+        getMovieById: async (id: string): Promise<IMovieFull> => {
+            const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=2667ac936a91aaef9540e05cf7c68ef5`)
+                .then(value => value.json());
+            console.log(response);
+            return response;
+        },
+        getHomeMovie: async (): Promise<IMovieFull> => {
             const response = await fetch('https://api.themoviedb.org/3/movie/912649?api_key=2667ac936a91aaef9540e05cf7c68ef5')
                 .then(value => value.json());
             console.log(response);

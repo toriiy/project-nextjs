@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
-import {IMovie} from "@/app/models/IMovie";
 import MoviePreview from "@/app/components/movie-preview/MoviePreview";
+import {IMovie} from "@/app/models/IMovie";
 
 type PropsType = {
     movies: IMovie[]
