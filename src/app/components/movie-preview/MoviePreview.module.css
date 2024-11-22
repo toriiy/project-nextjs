@@ -1,0 +1,12 @@
+.movieCards {
+    color: white;
+    background-color: #070707;
+    width: 230px;
+    min-height: 390px;
+}
+
+.movieTitles {
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+}

@@ -1,3 +1,5 @@
+import {IGenre} from "@/app/models/IGenre";
+
 export interface IMovieFull {
     adult: boolean,
     backdrop_path: string,
@@ -31,11 +33,6 @@ export interface IMovieFull {
     vote_count: number
 }
 
-interface IGenre {
-    id: number,
-    name: string
-}
-
 export interface IProdCompany {
     id: number,
     logo_path: string,
@@ -48,7 +45,7 @@ export interface IProdCountry {
     name: string
 }
 
-interface ISpokenLanguage {
+export interface ISpokenLanguage {
     english_name: string,
     iso_639_1: string,
     name: string

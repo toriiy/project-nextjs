@@ -7,15 +7,17 @@ import styles from './Header.module.css'
 const Header = () => {
     return (
         <div className={styles.header}>
-            <UserInfo/>
-            <ul>
-                <li>
-                    <Link href={'/'}>Home</Link>
-                </li>
-                <li>
-                    <Link href={'/genres'}>Genres</Link>
-                </li>
-            </ul>
+            <div className={styles.leftCorner}>
+                <UserInfo/>
+                <ul className={styles.navMenu}>
+                    <li>
+                        <Link href={'/'} className={styles.navLink}>Home</Link>
+                    </li>
+                    <li>
+                        <Link href={'/genres'} className={styles.navLink}>Genres</Link>
+                    </li>
+                </ul>
+            </div>
             <Search/>
         </div>
     );

@@ -1,0 +1,25 @@
+.block {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.grid {
+    min-height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}

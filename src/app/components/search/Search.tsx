@@ -16,11 +16,12 @@ const Search = () => {
     return (
         <div>
             <form onSubmit={handleSubmit(customHandler)} className={styles.searchForm}>
-                <input type="text" placeholder={'enter movie name'} {...register('movieName')}
+                <input type="text" placeholder={'Enter movie name'} {...register('movieName')}
                        className={styles.searchInput}/>
                 <button>
-                    <img src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
-                         alt="search icon" className={styles.searchIcon}/>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEJ0o26E6mxQKb9HrethmcNa3ekSqAp42FIQ&s"
+                        alt="search icon" className={styles.searchIcon}/>
                 </button>
             </form>
         </div>

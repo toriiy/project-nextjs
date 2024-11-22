@@ -1,0 +1,22 @@
+.homeDiv {
+    width: 750px;
+    color: white;
+    padding-left: 90px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    gap: 15px;
+    color: rgb(223, 223, 223);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
