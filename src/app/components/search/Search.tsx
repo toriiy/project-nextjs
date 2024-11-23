@@ -10,9 +10,10 @@ const Search = () => {
 
     const {register, handleSubmit} = useForm<IForm>();
 
-    const customHandler = (formData: IForm) => {
-        const searchMovie = apiService.movieService.getSearchMovie(formData);
+    const customHandler = async (formData: IForm) => {
+        const movies = await apiService.movieService.getSearchMovie(formData);
     }
+
     return (
         <div>
             <form onSubmit={handleSubmit(customHandler)} className={styles.searchForm}>

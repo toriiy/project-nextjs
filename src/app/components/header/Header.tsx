@@ -4,7 +4,7 @@ import Link from "next/link";
 import Search from "@/app/components/search/Search";
 import styles from './Header.module.css'
 
-const Header = () => {
+const Header = async () => {
     return (
         <div className={styles.header}>
             <div className={styles.leftCorner}>
