@@ -1,0 +1,10 @@
+.searchMoviesBlock {
+    background-color: #272727;
+    color: white;
+    height: 200px;
+    width: 400px;
+    overflow-y: auto;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+}

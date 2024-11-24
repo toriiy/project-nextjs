@@ -1,0 +1,23 @@
+.movieDiv {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.movieButton {
+    transition: 0.3s;
+    width: 365px;
+    min-height: 30px;
+    padding: 5px 15px;
+    background-color: #2c2b2b;
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid black;
+    color: white;
+}
+
+.movieButton:hover {
+    background-color: #424141;
+    transition: 0.3s;
+}
