@@ -7,8 +7,16 @@
 }
 
 .paginationButton {
-    background: linear-gradient(90deg, rgba(84, 92, 80, 0.9668242296918768) 6%, rgba(62, 65, 82, 0.9724264705882353) 49%, rgba(62, 66, 62, 0.9808298319327731) 93%);
+    background: #605f5f;
+    border-radius: 5px;
     color: white;
-    width: 170px;
+    width: 190px;
     height: 40px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.paginationButton:hover {
+    background: #3c3939;
+    transition: 0.3s;
 }

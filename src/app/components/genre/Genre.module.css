@@ -1,0 +1,16 @@
+.margin {
+    margin-bottom: 10px;
+}
+
+.genreLink {
+    transition: 0.3s;
+}
+
+.genreLink:hover {
+    color: #acacac;
+    transition: 0.3s;
+}
+
+.fontSize {
+    font-size: 18px;
+}

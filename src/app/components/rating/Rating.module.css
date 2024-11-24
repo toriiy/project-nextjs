@@ -1,0 +1,13 @@
+.ratingBlock {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: rgb(223, 223, 223);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.ratingImg {
+    height: 20px;
+    width: 40px;
+}

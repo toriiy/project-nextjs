@@ -3,10 +3,24 @@
     background-color: #070707;
     width: 230px;
     min-height: 390px;
+    transition: 0.5s;
+    border-radius: 7px;
+}
+
+.movieCards:hover {
+    box-shadow: 7px 9px 5px 0 rgba(230, 214, 230, 0.21);
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .movieTitles {
     margin-top: 5px;
     text-align: center;
     padding: 5px;
+    transition: 0.3s;
+}
+
+.movieTitles:hover {
+    color: #939191;
+    transition: 0.3s;
 }

@@ -22,4 +22,11 @@
 
 .navLink {
     text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navLink:hover {
+    color: #afafaf;
+    transition: 0.3s;
 }

@@ -6,10 +6,10 @@ import styles from './page.module.css'
 import Pagination from "@/app/components/pagination/Pagination";
 
 type SearchParams = Promise<{ page?: string }>
-type MyProps = {
+type MyParams = {
     searchParams: SearchParams
 }
-const MoviesPage: FC<MyProps> = async ({searchParams}) => {
+const MoviesPage: FC<MyParams> = async ({searchParams}) => {
     const {page} = await searchParams;
     const movies = await apiService.movieService.getMovies(page || '1');
 
@@ -20,7 +20,7 @@ const MoviesPage: FC<MyProps> = async ({searchParams}) => {
             </div>
             <div className={styles.pageDiv}>
                 <MoviesList movies={movies}/>
-                <Pagination/>
+                <Pagination baseUrl={'/'}/>
             </div>
         </div>
     );

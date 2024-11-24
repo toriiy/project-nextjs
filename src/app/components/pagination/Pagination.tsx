@@ -1,10 +1,13 @@
 'use client'
 
-import React from 'react';
+import React, {FC} from 'react';
 import {useRouter, useSearchParams} from "next/navigation";
 import styles from './Pagination.module.css'
 
-const Pagination = () => {
+type PropsType = {
+    baseUrl: string
+}
+const Pagination: FC<PropsType> = ({baseUrl}) => {
 
     const searchParams = useSearchParams();
     const router = useRouter();
@@ -13,13 +16,13 @@ const Pagination = () => {
 
     const incrementPage = () => {
         if (+page < 500) {
-            router.push(`/?page=${Number(page) + 1}`)
+            router.push(`${baseUrl}?page=${Number(page) + 1}`)
         }
     }
 
     const decrementPage = () => {
         if (+page > 1) {
-            router.push(`/?page=${Number(page) - 1}`)
+            router.push(`${baseUrl}?page=${Number(page) - 1}`)
         }
     }
     return (

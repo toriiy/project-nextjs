@@ -1,6 +1,6 @@
 .image {
-    width: 150px;
-    height: 80px;
+    width: 80px;
+    min-height: 50px;
 }
 
 .block {
