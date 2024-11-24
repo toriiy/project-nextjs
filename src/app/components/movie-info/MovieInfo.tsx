@@ -7,6 +7,7 @@ import Genre from "@/app/components/genre/Genre";
 import styles from './MovieInfo.module.css'
 import MovieVideos from "@/app/components/movie-videos/MovieVideos";
 import Rating from "@/app/components/rating/Rating";
+import StarsRating from "@/app/components/stars-rating/StarsRating";
 
 type PropsType = {
     movie: IMovieFull
@@ -17,6 +18,7 @@ const MovieInfo: FC<PropsType> = ({movie, id}) => {
             <div className={styles.block}>
                 <h2 className={styles.title}>Title: {movie.title} / <i>{movie.original_title}</i></h2>
                 <Rating movie={movie}/>
+                <StarsRating/>
                 <p>Tagline: {movie.tagline}</p>
                 <p>Overview: {movie.overview}</p>
                 <div className={styles.flex}>
@@ -54,7 +56,7 @@ const MovieInfo: FC<PropsType> = ({movie, id}) => {
                     </div>
                     : <></>}
                 {movie.production_countries.length ?
-                    <div>
+                    <div className={styles.infoBlock}>
                         <h3>Production countries:</h3>
                         <div>{movie.production_countries.map(country =>
                             <ProductionCountry country={country} key={country.iso_3166_1}/>)}</div>

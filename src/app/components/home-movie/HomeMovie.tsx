@@ -2,6 +2,7 @@ import React from 'react';
 import {apiService} from "@/app/services/api.service";
 import styles from './HomeMovie.module.css'
 import Link from "next/link";
+import StarsRating from "@/app/components/stars-rating/StarsRating";
 
 const HomeMovie = async () => {
     const homeMovie = await apiService.movieService.getHomeMovie();
@@ -19,6 +20,7 @@ const HomeMovie = async () => {
                 <p>Vote average: {homeMovie.vote_average}</p>
                 <p>Vote count: {homeMovie.vote_count}</p>
             </div>
+            <StarsRating/>
             <h3>Tagline: {homeMovie.tagline}</h3>
             <p>{homeMovie.overview}</p>
             <p>Release date: {homeMovie.release_date}</p>
